@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://wallpapershdnow.com/images/tv-shows/animation/rick-and-morty/rick-and-morty-background-3.jpg);
+    background-size:100%;
+}
+header{
+    background: rgb(43, 44, 58);
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    /* position: fixed; */
+    box-shadow: 1px 5px 30px  honeydew;
+    margin-bottom: 2%;
+    
+}
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+#logo{
+    width: 15%;
+    float: left;
+    padding: 0.6%;
+}
+form{
+    float: right;
+    padding-right: 5%;
+    
+    
+}
+form #search{
+    margin-top: 2%;
+    margin-left: 0%;
+    padding: 25px 0;
+    float: left;
+    font-size: 18px;
+    border-radius: 8px;
+    border: solid .5px rgb(117, 117, 122);
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+}
+form #search::placeholder{
+    text-align: center;
+}
+#search:focus{
+    outline: none;
+    background-color: var(--primary-color);
+}
+#main{
+    background-color: rgba(116, 180, 180, 0.452);
+    width: 80%;
+    margin: auto;
+}
+.container{
+    background-color:rgba(67, 110, 104, 0.534) ;
+    padding: 4%;
+    border-radius: 7px;
+    width: 40%;
+    display: inline-block;
+    align-content: center;
+    margin: 4%;
+}
+#card img{
+    width: 35%;
+    
+}
+#card #infoCard{
+    display: inline-block;
+    margin-left: 5%;
+}
+ul li{
+    list-style-type: none;
+    color: black;
+}
+ul #green::before{
+    content: '\2022';
+    color: rgb(73, 235, 33);
+    padding-right: 0.3em;
+}
+ul #red::before{
+    content: '\2022';
+    color: rgb(235, 33, 33);
+    padding-right: 0.3em;
+}
+ul #grey::before{
+    content: '\2022';
+    color: rgb(66, 71, 65);
+    padding-right: 0.3em;
+}

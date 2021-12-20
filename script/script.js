@@ -1,9 +1,14 @@
 const API = 'https://rickandmortyapi.com/api/character'
-const filtro = 'https://rickandmortyapi.com/api/character/?name'
+const filtro = 'https://rickandmortyapi.com/api/character/?name='
 
 const main = document.getElementById('main');
 const buscar = document.getElementById('search');
 const barra = document.getElementById('barra');
+const logo = document.getElementById('logo');
+
+logo.addEventListener('click', ()=>{
+    getCharacters(API)
+})
 
 const getCharacters = (url) => {
     const peticion = fetch(url)
@@ -24,7 +29,7 @@ const personajes = (perso) => {
         divPersonajes.classList.add('container')
         divPersonajes.innerHTML = `
         <div id="card">
-            <img src="${image}" class="img-per" alt="personaje">
+            <img src="${image}" id="logo" class="img-per" alt="personaje">
             <div id="infoCard">
                 <h4 id="nombre">${name}</h4>
                 <h5 id="especie">${species}</h5>
